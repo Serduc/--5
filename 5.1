@@ -1,0 +1,9 @@
+text = 'Наступила осень,самое ненастное время года.  Пожухлая трава прибита первыми заморозками. Но вдруг солнце пробивается из-за туч'
+   
+def del_some_words (text):
+    text = list((lambda x: 'абв' not in x, text.split('')))
+    
+    " " " ".join(text)
+
+text = del_some_words(text)
+print(text)
